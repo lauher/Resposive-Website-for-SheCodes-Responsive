@@ -6,18 +6,19 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --border-radius: 5px;
 }
+
 body {
   background: var(--color-d);
   color: var(--color-a);
-  margin: 60px auto;
-  max-width: 800px;
+  margin: 100px 0 0 0;
 }
+
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
+
 h1 {
   font-size: 96px;
 }
@@ -32,33 +33,53 @@ h3 {
 }
 
 p {
-  background: white;
-  border-radius: var(--border-radius);
-  display: block;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
-  padding: 20px;
-  text-align: center;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
-.homepage-link,
-.github-link {
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  background: var(--color-c);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  color: white;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.secondary-link {
+  color: var(--color-c);
+  border: 1px solid var(--color-c);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.homepage-link {
   color: var(--color-c);
   text-align: center;
   display: block;
 }
 
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
+
 .about-paragraphs p {
   margin: 10px;
 }
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -66,18 +87,7 @@ p {
   font-size: 28px;
   text-decoration: none;
 }
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-.navigation-links a {
-  margin: 20px;
-  border-radius: var(--border-radius);
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--color-c);
-  box-shadow: var(--box-shadow);
-  color: var(--color-d);
+
+.email-link:hover {
+  text-decoration: underline;
 }

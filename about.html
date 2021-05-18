@@ -4,42 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <title>About - Laura Herbert</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <a href="index.html" class="homepage-link">Back to homepage</a>
-    <h1>About me</h1>
-    <h3>Front-end developer based in Switzerland</h3>
-    <div class="about-paragraphs">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="/">Laura Herbert</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/about.html">About me</a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html#contact">Contact me</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <h1 class="text-center">About me</h1>
+    <h3 class="text-center">Front-end developer living in Aarau, Switzerland</h3>
+    <div class="about-paragraphs text-center">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh
-        tincidunt, varius libero sit amet, tempus purus. Curabitur semper metus
-        mi, vel rutrum libero finibus sit amet. Phasellus sit amet mauris
-        maximus, rutrum quam quis, tempor ipsum.
-        <br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh
-        tincidunt, varius libero sit amet, tempus purus. Curabitur semper metus
-        mi, vel rutrum libero finibus sit amet. Phasellus sit amet mauris
-        maximus, rutrum quam quis, tempor ipsum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh
-        tincidunt, varius libero sit amet, tempus purus. Curabitur semper metus
-        mi, vel rutrum libero finibus sit amet. Phasellus sit amet mauris
-        maximus, rutrum quam quis, tempor ipsum.
-        <br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nibh
-        tincidunt, varius libero sit amet, tempus purus. Curabitur semper metus
-        mi, vel rutrum libero finibus sit amet. Phasellus sit amet mauris
-        maximus, rutrum quam quis, tempor ipsum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
+        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
+        blanditiis harum.
       </p>
     </div>
-    <div id="contact">
-      <h2>Contact me via</h2>
-      <a href="mailto:lauraherbert90@hotmail.com" class="email-link"
-        >lauraherbert90@hotmail.com</a
-      >
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+              <img src="images/yoga.png" class="img-fluid p-2 shadow rounded" />
+          </div>
+          <div class="col-sm-4">
+              <img src="images/weather.png" class="img-fluid p-2 shadow rounded" />
+          </div>
+          <div class="col-sm-4">
+              <img src="images/yogurt.png" class="img-fluid p-2 shadow rounded" />
+          </div>
+        </div>
+      </div>
+    <div id="contact" class="mt-5">
+      <h2 class="text-center">📮 Contact me</h2>
+      <a href="mailto:lauraherbert90@hotmail.com" class="email-link">
+        lauraherbert90@hotmail.com
+      </a>
     </div>
   </body>
 </html>
